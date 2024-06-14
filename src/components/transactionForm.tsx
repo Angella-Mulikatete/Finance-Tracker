@@ -24,26 +24,26 @@ const TransactionForm: React.FC<{
   };
   return (
     <>
-      <form className="flex flex-col space-y-4">
+      <form onSubmit={handleSubmit}  className="flex flex-col space-y-4">
         <input
           type="number"
-            value={amount}
-            onChange={(e) => setAmount(Number(e.target.value))}
+          value={amount}
+          onChange={(e) => setAmount(Number(e.target.value))}
           placeholder="Amount"
           className="p-2 border border-gray-300 rounded"
           required
         />
         <input
           type="text"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
           placeholder="Description"
           className="p-2 border border-gray-300 rounded"
           required
         />
         <select
-            value={type}
-            onChange={(e) => setType(e.target.value as TransactionType)}
+          value={type}
+          onChange={(e) => setType(e.target.value as TransactionType)}
           className="p-2 border border-gray-300 rounded"
         >
           <option value="income">Income</option>
