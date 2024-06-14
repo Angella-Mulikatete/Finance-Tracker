@@ -1,8 +1,8 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import TransactionForm from "../components/transactionForm"
-import TransactionList from "../components/transactionList";
+import TransactionForm from "../components/TransactionForm"
+import TransactionList from "../components/TransactionList";
 
 type TransactionType = "income" | "expense";
 

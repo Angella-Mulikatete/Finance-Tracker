@@ -5,6 +5,7 @@ import { Transaction } from './transaction';
 
 
 type TransactionType = "income" | "expense";
+
 const TransactionForm: React.FC<{
   onAddTransaction: (transaction: {
     amount: number;
